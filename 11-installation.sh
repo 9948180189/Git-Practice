@@ -7,7 +7,7 @@ then
     exit 1
 fi
 
-dnf list installed git
+dnf installed git
 if [ $? -ne 0 ]
 then
     echo "Git Is not installed, going to insall it.."
@@ -24,7 +24,7 @@ else
     echo "Git Already installed, nothing to do."
 
 fi
-dnf list installed mysql
+dnf installed mysql
 
 if [ $? -ne 0 ]
 then

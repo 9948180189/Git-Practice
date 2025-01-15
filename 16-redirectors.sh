@@ -22,17 +22,17 @@ CHECK_ROOT(){
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo -e "$2 is...$R FAILED $N"&>>$LOG_FILE
+        echo -e "$2 is...$R FAILED $N" &>>$LOG_FILE
         exit 1
     else
-        echo -e "$2 is...$G success $N"&>>$LOG_FILE
+        echo -e "$2 is...$G success $N" &>>$LOG_FILE
     fi
 }
 USAGE(){
     echo -e "$R USAGE:: $N sudo sh 16-redirectors.sh package1 package2 ..."
     exit 1
 }
-echo "script started executing at: $(date)"
+echo "script started executing at: $(date)" &>>$LOG_FILE
 CHECK_ROOT
 if [ $# -eq 0 ]
 then

@@ -6,7 +6,7 @@ VALIDATE(){
 }
     if [ $1 -ne 0 ]
     then
-        echo "$2 is Failed'
+        echo "$2 is Failed"
         exit  1
     else
         echo "$2 is .success"
@@ -22,7 +22,7 @@ dnf list installed git
 VALIDATE $? "Listing Git"
 if [ $? -ne 0 ]
 then
-    echo "Git Is not installed, going to insall it.."
+    echo "Git Is not installed, going to insall it"
     dnf install git -y
     VALIDATE $? "Installing Git"
 else

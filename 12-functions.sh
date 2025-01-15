@@ -12,10 +12,10 @@ fi
 
 dnf installed git
 VALIDATE $?
-# if [ $? -ne 0 ]
-# then
-#     echo "Git Is not installed, going to insall it.."
-#     dnf install git -y
+if [ $? -ne 0 ]
+then
+    echo "Git Is not installed, going to insall it.."
+    dnf install git -y
 #     if [ $? -ne 0 ]
 #     then
 #         echo "Git installation is not success..check it"

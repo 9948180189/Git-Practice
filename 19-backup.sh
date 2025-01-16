@@ -28,7 +28,7 @@ fi
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
 echo "Files: $FILES"
 
-if [ -n $FILES ]
+if [ ! -z $FILES ]
 then
     echo "Files are found"
 else

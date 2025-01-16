@@ -14,6 +14,7 @@ else
 fi 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
 echo "Files: $FILES"
+
 while IFS= read -r line
 do
     echo "Deliting line: $Line"

@@ -7,5 +7,5 @@ failure(){
 trap 'failure "${LINED}" "$BASH_COMMAND"' ERR
 
 echo "Hello World success"
-echoo "hello world failure"
+echo "hello world failure"
 echo "Hello World After Failure"

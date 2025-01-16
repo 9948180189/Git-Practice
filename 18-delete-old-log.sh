@@ -12,7 +12,7 @@ else
     echo -e "$SOURCE_DIR $R does not exists $N"
     exit 1
 fi 
-FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
+FILES=$(find $SOURCE_DIR -name "*.log" -mtime +1)
 echo "Files: $FILES"
 
 while IFS= read -r line

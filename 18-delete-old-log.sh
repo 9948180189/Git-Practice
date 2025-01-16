@@ -11,4 +11,6 @@ then
 else    
     echo -e "$SOURCE_DIR $R does not exists $N"
     exit 1
-fi        
+fi 
+FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
+echo "Files: $FILES"       
